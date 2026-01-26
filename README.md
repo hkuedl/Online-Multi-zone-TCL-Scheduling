@@ -8,7 +8,7 @@ Authors: Xueyuan Cui, Liudong Chen, Yi Wang, and Bolun Xu.
 
 ## Experiments
 
-To access the required data, please go to ```Data``` folder for direct use. The data of electricity prices is included in ```Data_10days.mat``` (real data) and ```Data_quan_Final_10.mat``` (forecasting data), respectively. The raw data of prices can be collected at [NYISO](https://www.nyiso.com/energy-market-operational-data). The data of RC model parameters and disturbances are included in ```R&C.csv``` and ```90zone_15min.csv```, respectively. 
+To access the required data, please go to [Google Drive](https://drive.google.com/drive/folders/1n2SEkaIN_YUOnrSdE14ptHkDB4ud57J_?usp=drive_link) for direct use. The data of electricity prices is included in ```Data_10days.mat``` (real data) and ```Data_quan_Final_10.mat``` (forecasting data), respectively. The raw data of prices can be collected at [NYISO](https://www.nyiso.com/energy-market-operational-data). The data of RC model parameters and disturbances are included in ```R&C.csv``` and ```90zone_15min.csv```, respectively. 
 
 To reproduce the proposed method, please run the MATLAB codes in ```Codes```: ```Main_proposed.m```, where the sensitivity analysis on the clustering number is also presented. To reproduce the comparisons, please run the MATLAB codes in ```Codes```: ```Main_DE.m```, ```Main_SO.m```, ```Main_GT.m```.
 
