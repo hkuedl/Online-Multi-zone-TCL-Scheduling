@@ -1,8 +1,8 @@
-# Efficient_Response_to_Realtime_Price
+# Online Scheduling of Thermostatically Controlled Loads: A Stepwise Reformulation Approach
 
-_This work presents a computationally efficient method for online scheduling of thermostatically controlled loads (TCLs) in multi-zone buildings under uncertain real-time prices. We reformulate the original scheduling problem (multi-stage, uncertain, and decoupled) into a single-stage, deterministic, and decoupled problem type, which is solving-efficient and accurate for online applications._
+_This work presents a computationally efficient method for online scheduling of thermostatically controlled loads (TCLs) in multi-zone buildings under uncertain real-time prices. We reformulate the original scheduling problem (multi-stage, uncertain, and coupled) into a single-stage, deterministic, and decoupled problem type, which is solving-efficient and accurate for online applications._
 
-Codes for Submitted Paper "A Stepwise Reformulation Approach for Online Thermostatically Controlled Loads Scheduling".
+Codes for Submitted Paper "Online Scheduling of Thermostatically Controlled Loads: A Stepwise Reformulation Approach".
 
 Authors: Xueyuan Cui, Liudong Chen, Yi Wang, and Bolun Xu.
 
