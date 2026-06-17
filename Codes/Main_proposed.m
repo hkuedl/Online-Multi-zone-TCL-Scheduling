@@ -62,7 +62,7 @@ C = 3*C;
 R = 2*R;
 
 COP = 5;
-
+%%
 beta_ = COP./C; %2.2;
 eta_ = zeros(Z_num,1);
 alpha_ = zeros(Z_num,Z_num);
@@ -272,7 +272,7 @@ disp(PR_v_cost_total_real_sum);
 %% Two-stage deterministic optimization (First stage)
 
 gamma = 0.05;  %1-gamma = 95%
-mu_0 = 0;      
+mu_0 = 0;
 sigma_0 = 0.01; 
 
 num_equiv_zones = 5 * num_clusters;
@@ -288,7 +288,6 @@ for t = 1:T
     T_c_ref_min_CC(:, t) = T_c_ref_min(:, t) - xi_under_t; 
     T_c_ref_max_CC(:, t) = T_c_ref_max(:, t) - xi_over_t;
 end
-
 
 %% Two-stage deterministic optimization (Second stage)
 rng(42, 'twister');
@@ -453,10 +452,10 @@ for opt_day = 1:10
     disp(['comfort cost_real (Proposed): ', num2str(DP_Cost(opt_day,2))]);
     disp(['Total cost_real (Proposed): ', num2str(DP_Cost(opt_day,3))]);
     DP_Time(opt_day,1) = sum(time_elapsed_online);
-    if opt_day == 4
-        aa = squeeze(DP_tem_recover(opt_day,:,:));
-        save('Tem_PR.mat','aa');
-    end
+    %if opt_day == 4
+    %    aa = squeeze(DP_tem_recover(opt_day,:,:));
+    %    save('Tem_PR.mat','aa');
+    %end
 end
 
 %% Functions

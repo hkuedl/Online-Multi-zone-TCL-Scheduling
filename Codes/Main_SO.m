@@ -144,7 +144,7 @@ num_clusters = 8;
 
 %% Online SO - MPC
 rng(42, 'twister');
-N_scen = 15;
+N_scen = 5;
 H = 24;
 
 mu_0 = 0;
@@ -153,7 +153,7 @@ sigma_0 = 0.01;
 SO_Cost = zeros(N_days,3);
 SO_Time = zeros(N_days,1);
 
-for day_i = 1:10
+for day_i = 7:10
     quantiles_all = load('Data_quan_Final_10.mat');
     Price_samss = [20, 50, 100];
     Price_sam_i = 1;
@@ -242,7 +242,7 @@ for day_i = 1:10
     SO_Time(day_i,1) = time_elapsed_online; %/(5*num_clusters); can not divide by zone number due to its central optimization
     if day_i == 4
         aa = all_tem_real_100z(:,2:end)';
-        save('Tem_SO.mat','aa');
+        save('Tem_SO_new.mat','aa');
     end
 end
 
